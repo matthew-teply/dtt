@@ -3,11 +3,31 @@
 @import 'tailwindcss/utilities';
 
 :root {
+    /* Concept colors */
+    --color-technology: #0AB8FB;
+    --color-design: #FAA203;
+    --color-research: #0D68EF;
+
+    /* Dialog */
     --dialog-background: #FFF9EF;
     --dialog-border-color: #FED17B;
     --dialog-title-border-color: #A2ABB2;
 
+    /* Button: primary */
     --button-primary-background: linear-gradient(180deg, #F9A221 0%, #E57F31 100%);
     --button-primary-background-active: linear-gradient(180deg, #E57F31 0%, #F9A221 100%);
     --button-primary-border-color: #D79246;
+
+    /* Button: danger */
+    --button-danger-background: linear-gradient(180deg, #F85B5E 0%, #E22E2C 100%);
+    --button-danger-background-active: linear-gradient(180deg, #E22E2C 0%, #F85B5E 100%);
+    --button-danger-border-color: #CB5C5B;
+
+    /* Button: success */
+    --button-success-background: radial-gradient(circle, #50C93A 0%, #359920 100%);
+    --button-success-background-active: #359920;
+    --button-success-border-color: #3B9928;
+
+    /* Input */
+    --input-border-color: #d1cfbd;
 }

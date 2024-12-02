@@ -1,6 +1,7 @@
 .dtt-button {
   display: inline-block;
   cursor: pointer;
+  outline: 0;
 }
 
 .dtt-button--primary {
@@ -12,23 +13,20 @@
   background: var(--button-primary-background-active);
 }
 
-.dtt-button--secondary {
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
-  background-color: transparent;
-  color: #333;
+.dtt-button--danger {
+  background: var(--button-danger-background);
+  border-color: var(--button-danger-border-color);
 }
 
-.dtt-button--small {
-  padding: 10px 16px;
-  font-size: 12px;
+.dtt-button--danger:active {
+  background: var(--button-danger-background-active);
 }
 
-.dtt-button--medium {
-  padding: 11px 20px;
-  font-size: 14px;
+.dtt-button--success {
+  background: var(--button-success-background);
+  border-color: var(--button-success-border-color);
 }
 
-.dtt-button--large {
-  padding: 12px 24px;
-  font-size: 16px;
+.dtt-button--success:active {
+  background: var(--button-success-background-active);
 }
