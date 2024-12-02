@@ -1,0 +1,8 @@
+.dtt-dialog {
+    background-color: var(--dialog-background);
+    border-color: var(--dialog-border-color);
+}
+
+.dtt-dialog .title {
+    border-color: var(--dialog-title-border-color);
+}

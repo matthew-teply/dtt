@@ -1,3 +1,13 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
-@import 'tailwindcss/utilities'
+@import 'tailwindcss/utilities';
+
+:root {
+    --dialog-background: #FFF9EF;
+    --dialog-border-color: #FED17B;
+    --dialog-title-border-color: #A2ABB2;
+
+    --button-primary-background: linear-gradient(180deg, #F9A221 0%, #E57F31 100%);
+    --button-primary-background-active: linear-gradient(180deg, #E57F31 0%, #F9A221 100%);
+    --button-primary-border-color: #D79246;
+}
