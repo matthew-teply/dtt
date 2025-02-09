@@ -33,6 +33,9 @@ export class LocalStorage
     }
 
     private getTable = (table: string): TKeyValueObject => {
+        this.checkBrowser();
+        this.checkRequiredTables();
+
         const storageTable = localStorage.getItem(table);
 
         if (storageTable === null) {
@@ -43,23 +46,14 @@ export class LocalStorage
     }
 
     setItem = <T = any>(table: string, key: string, value: T) => {
-        this.checkBrowser();
-        this.checkRequiredTables();
-
         const storageTable = this.getTable(table);
 
-        console.log('storageTable', storageTable);
-
         storageTable[key] = value;
-
-        console.log('storageTable', storageTable);
 
         localStorage.setItem(table, JSON.stringify(storageTable));
     }
 
     getItem = <T>(table: string, key: string): T | null => {
-        this.checkBrowser();
-
         const parsedStorageTable = this.getTable(table);
 
         if (parsedStorageTable[key] === undefined) {
@@ -70,8 +64,6 @@ export class LocalStorage
     }
 
     deleteItem = (table: string, key: string): void => {
-        this.checkBrowser();
-
         const storageTable = this.getTable(table);
 
         delete storageTable[key];
